@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <!-- 跟css檔案連結 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <!-- 設定font-stylt -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- 要使用icon的網站 -->
+    <title>繼續購物</title>
+</head>
+
+<body>
+    <header class="toppage-header">
+        <!--整頁頁首 -->
+        <div class="top1-meau">
+            <!--============= top1-meau============ -->
+            <div class="container">
+                <!-- 置中容器 -->
+                <span>新春特價中!三件免運再抽大紅包!</span>
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="main-meun">
+        <!-- 主選單 -->
+        <div class="top2-block">
+            <div class="container">
+                <!-- ================top2-block================== -->
+                <div class="top2-text">
+                     <button><i class="fas fa-align-justify"></i></button>
+                    <ul>
+                        <li><a href="#">線上商城</a></li>
+                        <li><a href="#">關於剁手</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="top2-center">
+                    剁手網
+                </div>
+                <div class="top2-icon">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+                        <li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="continue-shopping">
+        <!-- ================繼續購物continue-shopping================== -->
+        <div class="container-cart">
+            &lsaquo; &ensp;繼續購物
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~以下是表格form~~~~~~~~ -->
+    <form action="_form">
+        <div class="form-top">
+            <div class="container-cart">
+                <!--===============購物車(1)form-top==================-->
+                <div class="cart-one">
+                    購物車(1)
+                </div>
+                <div class="price-to-sub">
+                    <ul>
+                        <li>價格</li>
+                        <li>數量</li>
+                        <li>小計</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-1750">
+            <!-- =================商品那列img-1750========== -->
+            <div class="container-cart">
+                <div class="img-and-des">
+                    <img src="./img/item.png" alt="商品小圖">
+                    <ul>
+                        <li>神采飛揚16色珠光眼影<span>[自然色]</span></li>
+                        <li>YR-5640</li>
+                        <li>刪除</li>
+                    </ul>
+                </div>
+                <div class="amount">
+                    <ul>
+                        <li>$1750</li>
+                        <li><input type="text" value="1"></li>
+                        <li>$1750</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="discount-pay">
+            <!-- ================使用者折扣碼discount-pay=========== -->
+            <div class="container-cart">
+                <div class="discount-input">
+                    <span>使用者折扣碼&ensp; : &ensp;</span>
+                    <input type="text">
+                </div>
+                <div class="check">
+                    <div class="top">
+                        <ul>
+                            <li>商品金額</li>
+                            <li>$1750</li>
+                        </ul>
+                        <ul>
+                            <li>運費</li>
+                            <li>$0</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>總計</li>
+                        <li>$1750</li>
+                    </ul>
+                    <input type="button" value="結帳">
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="email">
+        <div class="container">
+            <!--=================email快來訂閱============ -->
+            <h2>
+                擔心錯過剁手的好機會嗎？
+                <br>快來訂電子報吧！
+            </h2>
+            <form action="_form-email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="email">
+                <div class="order">
+                    <input type="button" value="訂！">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <!-- ============page-footer頁尾========= -->
+        <div class="cantact">
+            <div class="container">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">線上商城</a></li>
+                        <li><a href="#">關於剁手</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                        <li><a href="#">運費資訊</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container"></div>
+            <div class="copyright">
+                <span> 2019 &copy; BuildSchool</span>
+            </div>
+        </div>
+    </div>
+    discount-pay
+    <!-- ============================JQuery============================ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--============== 寫javascript的地方=========== -->
+    <script>
+        // 用來處理選單,讓主選單有一個按鈕可以用
+        $(function () {
+            //縮放完要重整阿~~~~
+            if ($(".top2-text button").is(":visible")) {
+                $(".top2-text ul").hide();
+                $(".top2-text button").on("click", function () {
+                    $(".top2-text ul").toggle();
+                    $(".top2-text i").toggleClass("fa-align-justify").toggleClass("fa-align-justify");
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

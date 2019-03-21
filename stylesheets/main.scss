@@ -1,0 +1,703 @@
+@import "normalize";
+$gray-color: #aaa;
+%nostyle-list {
+  /* 消除清單樣式 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%font-style {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+// ==============以上小工具============
+html {
+  font: normal 16px, serif;
+}
+
+ul {
+  @extend %nostyle-list;
+}
+
+.container {
+  /* index的置中容器 */
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container-cart {
+  /* cart的置中容器 */
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.container-item {
+  width: 820px;
+  margin: 0 auto;
+}
+//==================以上是容器===============//
+
+/*====================整頁頁首.主選單===================*/
+/*============= top1-meau============*/
+.toppage-header {
+  background-color: #000;
+  .container {
+    text-align: center;
+  }
+  .top1-meau {
+    width: 100%;
+    height: 40px;
+  }
+  span {
+    color: #fff;
+    line-height: 40px;
+  }
+}
+/*================top2-block==================*/
+.main-meun {
+  @extend%font-style;
+  .top2-block {
+    margin: 10px 0;
+    a{
+      color: #888;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#000;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+  }
+  ul {
+    @extend%nostyle-list;
+    display: flex;
+    justify-content: space-around;
+    line-height: 28px;
+  }
+  .top2-text {
+    button {
+      display: none;
+    }
+    flex-grow: 0.6;
+    
+  }
+  .top2-icon {
+    flex-grow: 0.805;
+    ul {
+      justify-content: left;
+    }
+    li {
+      margin-left: 15px;
+    }
+    .cart {
+      margin-left: 25px;
+    }
+  }
+  .top2-center {
+    font-size: 25px;
+    flex-grow: 2;
+    text-align: center;
+  }
+}
+
+/*===================首頁圖index-img==============*/
+.index-img {
+  height: 500px;
+  width: auto;
+  background: url(../img/freestocks-org-182581-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+  h2 {
+    width: 50%;
+    @extend %font-style;
+    position: relative;
+    font: bold 50px serif;
+    color: #fff;
+    margin: 0;
+    left: 1em;
+    top: 2em;
+  }
+}
+
+/*===============商品圖標題product=================*/
+.product {
+  .hot-product {
+    @extend %font-style;
+    text-align: center;
+  }
+}
+
+/*=====================商品圖=================*/
+.product-img {
+  ul {
+    @extend %nostyle-list;
+    @extend %font-style;
+    overflow: auto;
+  }
+  li {
+    margin: 0 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    float: left;
+  }
+  h3 {
+    margin: 10px 0;
+  }
+}
+
+/*=====================就是要你剁手=================*/
+
+.principle {
+  @extend %font-style;
+  height: auto;
+  background: #888;
+  padding: 30px 0;
+  color: #fff;
+  dl {
+    text-align: center;
+    dt {
+      padding: 20px 0;
+      font: bold 50px sans-serif;
+    }
+    dd {
+      margin: 0;
+      line-height: 30px;
+    }
+  }
+}
+
+/*================email快來訂閱==============*/
+.email {
+  margin-top: 0px;
+  background: rgb(241, 237, 237);
+  padding-top: 20px;
+  height: 250px;
+  h2 {
+    text-align: center;
+  }
+  form {
+    text-align: center;
+    i {
+      position: relative;
+      left: 25px;
+      top: 3px;
+    }
+  }
+  [type="text"] {
+    padding-left: 30px;
+    width: 450px;
+    height: 30px;
+    background: rgb(241, 241, 241);
+    border: 0;
+    border-bottom: #ddd 3px solid;
+  }
+  [type="button"] {
+    border: 0;
+    padding: 0;
+    width: 480px;
+    height: 30px;
+    background: #000;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fff;
+  }
+}
+
+/*===============page-footer頁尾================*/
+.cantact {
+  background-color: #444;
+  ul {
+    @extend %nostyle-list;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    li {
+      @extend %font-style;
+      color: #fff;
+      flex: 0 1 100px;
+      text-align: center;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #000;
+    }
+  }
+  .copyright {
+    background-color: #aaa;
+    text-align: center;
+    height: 50px;
+    span {
+      @extend %font-style;
+      position: relative;
+      top: 15px;
+    }
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~換檔案cart02~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*===============繼續購物continue-shopping===========*/
+
+.continue-shopping {
+  @extend%font-style;
+  margin-top: 20px;
+}
+
+/*===============購物車(1)form-top===============*/
+.form-top {
+  @extend%font-style;
+  color: $gray-color;
+  .container-cart {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 5px auto;
+  }
+  ul {
+    @extend%nostyle-list;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    line-height: 28px;
+    margin-right: 100px;
+  }
+  li:nth-child(3) {
+    margin-right: 0;
+  }
+  li:nth-child(2) {
+    margin-right: 150px;
+  }
+}
+
+/*=================商品那列img-1750==========*/
+.img-1750 {
+  .container-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: #ddd 1px solid;
+    border-bottom: #ddd 1px solid;
+  }
+  .img-and-des {
+    ul {
+      @extend%nostyle-list;
+      @extend%font-style;
+      float: right;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    li:nth-child(2) {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    li:nth-child(3) {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #aaa;
+      text-decoration: underline;
+    }
+    span {
+      color: #888;
+      margin-left: 5px;
+    }
+    img {
+      width: 110px;
+      height: 100px;
+    }
+  }
+
+  .amount {
+    @extend%font-style;
+    ul {
+      @extend%nostyle-list;
+      display: flex;
+    }
+    li {
+      margin-right: 90px;
+    }
+    li:nth-child(3) {
+      margin-right: 0;
+    }
+    li:nth-child(2) {
+      margin-right: 100px;
+    }
+    input {
+      width: 60px;
+      height: 25px;
+      padding-left: 5px;
+      border: #aaa 1px solid;
+    }
+  }
+}
+
+/*==============使用者折扣碼discount-pay==========*/
+.discount-pay {
+  margin-bottom: 50px;
+  .container-cart {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    width: 315px;
+    justify-content: space-between;
+    display: flex;
+    @extend%font-style;
+    @extend%nostyle-list;
+    color: $gray-color;
+  }
+  li {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  ul:nth-child(3) {
+    margin-top: 20px;
+  }
+  .top {
+    margin-bottom: 20px;
+    border-bottom: #aaa 1px solid;
+  }
+  [type="button"] {
+    border: 0;
+    width: 300px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    @extend%font-style;
+  }
+  [type="text"] {
+    height: 50px;
+  }
+  span {
+    bottom: 20px;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~換檔案item02~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.index-makeup-eyeshadow {
+  /*  ================首頁>化妝品>眼影==============*/
+  .i-m-t-text {
+    @extend%font-style;
+    color: $gray-color;
+    padding-top: 10px;
+    ul {
+      @extend%nostyle-list;
+      display: flex;
+    }
+    i {
+      margin: 0 10px;
+    }
+  }
+}
+
+/*================img-and-description================*/
+.img-and-description {
+  margin: 50px 0;
+  .container-item {
+    display: flex;
+  }
+}
+.left {
+  flex: 1 1 50%;
+  img {
+    width: 100%;
+  }
+  p {
+    margin-right: 0;
+  }
+}
+
+.right {
+  margin-left: 50px;
+  flex: 1 1 50%;
+  .right-top {
+    @extend%font-style;
+    border-bottom: #ddd 1px solid;
+    h3 {
+      margin: 0;
+    }
+    h5 {
+      color: #888;
+      font-size: 14px;
+    }
+    .stan {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    select {
+      width: 100%;
+      height: 35px;
+      border: #ddd 1px solid;
+    }
+    .one {
+      margin: 20px 0;
+    }
+    [type="text"] {
+      display: block;
+      width: 60px;
+      height: 25px;
+      margin-bottom: 20px;
+    }
+    [type="button"] {
+      border: 0;
+      width: 100%;
+      height: 35px;
+      color: #fff;
+      background: #000;
+      margin-bottom: 20px;
+    }
+  }
+
+  .right-down {
+    margin-top: 25px;
+    @extend%font-style;
+    ul {
+      @extend%nostyle-list;
+    }
+    li {
+      display: flex;
+      margin: 20px 0;
+      img {
+        margin-right: 20px;
+      }
+    }
+    .relate {
+      font-size: 18px;
+    }
+    h3 {
+      font-weight: normal;
+    }
+  }
+}
+/*================up-down================*/
+.up-down {
+  .container-item {
+    display: flex;
+    justify-content: center;
+  }
+  margin-bottom: 50px;
+  a {
+    @extend%font-style;
+    color: #888;
+    margin: 0 30px;
+    text-decoration: none;
+    &:hover {
+      color: #707;
+    }
+  }
+}
+
+// 要寫在網頁最後面
+// 先寫的會被蓋掉阿~~~
+// 條件之下,要覆蓋原來的值的樣式,不是巢狀
+// 要覆蓋掉原來的值,所以權重很重要,
+// 不然很難覆蓋阿~~~~
+@media screen and (max-width: 1350px) {
+  .container {
+    width: 1080px;
+  }
+  .container-item {
+    width: 780px;
+  }
+  .container-cart {
+    width: 760px;
+  }
+  .product-img {
+  li {
+    margin: 0 10px;
+  }
+ 
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 870px;
+  }
+  .container-item {
+    width: 690px;
+  }
+  .main-meun {
+    span {
+      position: relative;
+      right: 10px;
+    }
+  }
+
+  .img-and-description {
+    .left {
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .right {
+      height: 100%;
+      .right-top {
+        height: 45%;
+      }
+      .right-down {
+        height: 55%;
+        li {
+          margin: 10px 0;
+        }
+        img {
+          height: 90px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .index-img h2 {
+    width: 50%;
+    font: bold 40px serif;
+    top: 3em;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    width: 700px;
+  }
+  .container-item {
+    width: 580px;
+  }
+  .container-cart {
+    width: 500px;
+  }
+  .discount-pay {
+    .check {
+      width: 50%;
+    }
+    ul {
+      width: 100%;
+    }
+    [type="button"] {
+      width: 100%;
+    }
+    [type="text"] {
+      margin-top: 20px;
+      width: 70%;
+    }
+  }
+  .img-1750 {
+    .amount {
+      li {
+        margin-right: 70px;
+      }
+      li:nth-child(2) {
+        margin-right: 50px;
+      }
+    }
+    .img-and-des {
+      ul {
+        margin-left: 0;
+      }
+    }
+  }
+     .form-top {
+      li {
+        margin-right: 80px;
+      }
+      li:nth-child(2) {
+        margin-right: 100px;
+      }
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .container-item {
+    width: 470px;
+  }
+  .cantact ul li {
+    flex: 0 1 90px;
+  }
+
+  .img-and-description {
+    margin-top: 0;
+    .container-item {
+      flex-direction: column;
+    }
+    .left {
+      display: flex;
+      height: 300px;
+      img {
+        width: 265px;
+        height: 266px;
+        padding-top: 20px;
+      }
+      p {
+        white-space: nowrap;
+        /* 不管怎樣都不換行 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 顯示出刪節線 */
+      }
+      ul {
+        width: 50%;
+        padding-top: 20%;
+      }
+    }
+  }
+  .main-meun {
+    .top2.center {
+      text-align: left;
+    }
+    .top2-text {
+      position: relative;
+      left: 50px;
+      width: 30%;
+      button {
+        display: block;
+        border: 0;
+        background: #fff;
+      }
+      ul {
+        background: #fff;
+        flex-direction: column;
+      }
+    }
+  }
+  .principle dl {
+    dt {
+      font: bold 40px sans-serif;
+    }
+    dd {
+      font-size: 15px;
+    }
+  }
+  .index-img h2 {
+    width: 50%;
+    font: bold 30px serif;
+    top: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+  .container-item {
+    width: 370px;
+  }
+  .email [type="text"] {
+    width: 400px;
+  }
+  .email [type="button"] {
+    width: 430px;
+  }
+}
