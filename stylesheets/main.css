@@ -1016,7 +1016,18 @@ html {
     margin-right: 50px;
   }
   .img-1750 .img-and-des ul {
+    float: none;
     margin-left: 0;
+  }
+  .img-1750 .img-and-des span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img-1750 .img-and-des img {
+    width: 120px;
+    height: 110px;
+    margin: 0 20px;
   }
   .form-top li {
     margin-right: 80px;

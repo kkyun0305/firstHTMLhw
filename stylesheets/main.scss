@@ -611,7 +611,16 @@ ul {
     }
     .img-and-des {
       ul {
+        float: none;
         margin-left: 0;
+      }
+      span {
+        display: flex;
+      }
+      img {
+        width: 120px;
+        height: 110px;
+        margin: 0 20px;
       }
     }
   }
@@ -727,8 +736,8 @@ ul {
     h3 {
       font-size: 13px;
     }
-    span{
-      font-size:13px;
+    span {
+      font-size: 13px;
     }
   }
 }
